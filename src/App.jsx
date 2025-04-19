@@ -12,6 +12,7 @@ import Attendance from './screens/Attendance'
 import Locker from './screens/Locker'
 import AllStudents from './screens/AllStudents'
 import DisplayStudent from './screens/DisplayStudent'
+import AddLocker from './screens/AddLocker'
 
 function App() {
   return (
@@ -24,10 +25,11 @@ function App() {
             <Route path='/send-email' element={<SendEmails />} />
             <Route path='/register' element={<Registration />} />
             <Route path='/profile' element={<Profile />} />
-            <Route path='/students' element={<AllStudents/>} />
-            <Route path='/students/:id' element={<DisplayStudent/>} />
+            <Route path='/students' element={<AllStudents />} />
+            <Route path='/students/:id' element={<DisplayStudent />} />
             <Route path='/attendance' element={<Attendance />} />
-            <Route path='/locker' element={<Locker/>} />
+            <Route path='/locker' element={<Locker />} />
+            <Route path='/add-locker' element={<AddLocker />} />
           </Route>
         </Route>
       </Routes>

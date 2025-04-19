@@ -13,8 +13,6 @@ function Attendance() {
 
   return (
     <div className='flex flex-col p-4 pb-24'>
-
-      <h3 className='text-2xl text-gray-600 mb-8 text-center'>Student Attendance</h3>
       {/* Styled Search Bar */}
       <div className='bg-white px-4 py-2 w-full max-w-md flex justify-between items-center rounded-full shadow-sm mx-auto border focus-within:ring-2 focus-within:ring-blue-500 mb-6'>
         <input
