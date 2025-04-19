@@ -26,7 +26,6 @@ function AuthContextProvider({ children }) {
         try {
             axios.defaults.withCredentials = true;
             const { data } = await axios.get("http://localhost:5000/api/user/data");
-            console.log(data)
             if (data.success) {
                 await getUser();
                 setIsLoggedIn(true);
